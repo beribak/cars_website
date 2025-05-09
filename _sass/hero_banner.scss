@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.75);
+}
+
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-text .subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.stats {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 1.5rem;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .stats h2 {
+    font-size: 1.2rem;
+  }
+
+  .stats p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    top: 20%;
+    left: 5%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .stats h2 {
+    font-size: 1rem;
+  }
+
+  .stats p {
+    font-size: 0.7rem;
+  }
+}

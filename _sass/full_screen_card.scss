@@ -1,0 +1,61 @@
+.battery-section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.battery-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.battery-text p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.battery-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .battery-section {
+    padding: 60px 15px;
+  }
+
+  .battery-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .battery-text p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .battery-section {
+    padding: 40px 10px;
+  }
+
+  .battery-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .battery-text p {
+    font-size: 0.9rem;
+  }
+
+  .battery-image img {
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+  }
+}
