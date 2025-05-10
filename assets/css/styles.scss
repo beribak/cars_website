@@ -1,11 +1,12 @@
 ---
 ---
+
 @use "navbar";
 @use "hero_banner";
 @use "overlay_banner";
 @use "quality_section";
 @use "full_screen_card";
-// ;  
+@use "homepage";
 
 * {
   margin: 0;

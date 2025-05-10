@@ -12,7 +12,9 @@
     <!-- <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}"> -->
   </head>
   <body>
+    {% include navigation.html %}
     {{ content }}
+    {% include footer.html %}
   </body>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </html>
