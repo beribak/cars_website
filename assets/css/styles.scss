@@ -1,3 +1,121 @@
 ---
 ---
-@use "main";
+// @use "main";
+// ;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #fff;
+}
+
+.card-header {
+  color: #000;
+}
+
+footer.newsletter-section {
+  background-color: #fafaf2;
+  padding: 60px 40px 40px;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-left h2 {
+  font-size: 2rem;
+  max-width: 300px;
+  color: #000;
+}
+
+.newsletter-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.newsletter-right label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000;
+}
+
+.input-group {
+  display: flex;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  border: 1px solid #111;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter-right small {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.newsletter-right a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.disclaimers {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.more-details {
+  display: inline-block;
+  margin-top: 20px;
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ...existing code... */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 480px) {
+ 
+}
