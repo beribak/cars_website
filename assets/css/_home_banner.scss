@@ -1,0 +1,102 @@
+header {
+  position: fixed; // Change from absolute to fixed
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: transparent; // Start with transparent
+  color: #000;
+  z-index: 1000;
+  transition: background 0.3s ease, color 0.3s ease; // Smooth transition for background and color
+}
+
+header.scrolled {
+  background: #fff; // White background when scrolled
+  color: #000; // Change text color to black
+}
+
+.nav-links a:hover {
+  color: #ffd700; // Keep hover color consistent
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.logo span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff; // Initial color is white
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header.scrolled .nav-links a {
+  color: #000; // Change to black when scrolled
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 16px;
+}
+
+header.scrolled .nav-links a {
+  color: #000; // Change to black when scrolled
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .social-icons {
+    margin-left: auto;
+  }
+}
