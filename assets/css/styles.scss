@@ -1,13 +1,13 @@
 ---
 ---
 
-@use "navbar";
-@use "hero_banner";
-@use "overlay_banner";
-@use "quality_section";
-@use "full_screen_card";
-@use "home_brands";
-@use "home_banner";
+@import "navbar";
+@import "hero_banner";
+@import "overlay_banner";
+@import "quality_section";
+@import "full_screen_card";
+@import "home_brands";
+@import "home_banner";
 
 * {
   margin: 0;

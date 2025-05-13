@@ -10,6 +10,7 @@ header {
 }
 
 header.scrolled {
+  opacity: 0.9; // Slightly transparent when scrolled
   background: #fff; // White background when scrolled
   color: #000; // Change text color to black
 }
@@ -31,6 +32,10 @@ header.scrolled {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2;
+}
+
+header.scrolled .logo {
+  color: #000; // Change to black when scrolled
 }
 
 .logo span {
@@ -65,7 +70,7 @@ header.scrolled .nav-links a {
   font-size: 16px;
 }
 
-header.scrolled .nav-links a {
+header.scrolled .social-icons a {
   color: #000; // Change to black when scrolled
 }
 
