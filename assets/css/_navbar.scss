@@ -1,4 +1,9 @@
-.navbar {
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-custom {
   display: flex;
   gap: 100px;
   // justify-content: space-between;
@@ -59,7 +64,7 @@ nav a {
 }
 
 @media (max-width: 768px) {
-  .navbar {
+  .navbar-custom {
     gap: 10px;
     /* display: none; */
     flex-direction: column;

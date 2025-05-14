@@ -10,7 +10,7 @@ header {
 }
 
 header.scrolled {
-  opacity: 0.9; // Slightly transparent when scrolled
+  opacity: 0.95; // Slightly transparent when scrolled
   background: #fff; // White background when scrolled
   color: #000; // Change text color to black
 }
@@ -77,31 +77,56 @@ header.scrolled .social-icons a {
 .menu-toggle {
   display: none;
   font-size: 24px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
+header.scrolled .menu-toggle {
+  color: #000; // Change to black when scrolled
+}
+
 @media (max-width: 900px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: rgba(0,0,0,0.9);
-    position: absolute;
-    top: 70px;
-    left: 0;
-    padding: 20px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
   .menu-toggle {
     display: block;
   }
 
-  .social-icons {
-    margin-left: auto;
+  .nav-links {
+    display: none; // Initially hidden
+    flex-direction: column;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    padding: 20px;
+    transition: all 0.3s ease;
   }
+
+  .nav-links.active {
+    display: flex; // Show when active
+  }
+
+  header.scrolled .nav-links {
+    background-color: #fff; // Change to black when scrolled
+  }
+
+  .social-icons {
+    display: none; // Initially hidden
+    margin-left: auto;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    left: 0;
+    padding-left: 20px;
+  }
+
+  .social-icons.active {
+    display: flex; // Show when active
+  }
+
+  header.scrolled .social-icons {
+    background-color: #fff; // Change to black when scrolled
+  }
+
 }
